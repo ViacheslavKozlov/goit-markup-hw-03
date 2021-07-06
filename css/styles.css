@@ -6,8 +6,14 @@
   --button-background: #f5f4fa;
   --footer-background: #2f303a;
 }
+h1, h2, h3, h4, h5, h5, p {
+  margin: 0px;
+  padding: 0px;
+}
 ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 a {
   text-decoration: none;
@@ -16,7 +22,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--title-text-color);
 }
-
+.container {
+  width: 1200px;
+  margin: 0px;
+  padding: 0 15px;
+}
+.section {
+  padding: 94px 0px;
+}
 /*header*/
 .link, .link-adress {
   font-style: normal;
@@ -41,15 +54,34 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+}
+.nav-menu {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-adress {
+  display: flex;
+  margin-left: auto;
+}
+.nav-menu > .item:not(:last-child), .nav-adress > .item:not(:last-child) {
+  margin-right: 50px;
+}
 .link-logo {
   color: var(--button-active-color);
 }
 
 /*footer*/
 footer {
+  padding-top: 60px;
   background: var(--footer-background);
 }
 .footer-adress {
+  padding-top: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -68,25 +100,35 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.adress-list {
+  padding-bottom: 60px;
+}
 
 /*main page*/
 .claim-section-head {
+  height: 600px;
   background: var(--footer-background);
 }
 .claim-section-title-text {
-  color: var(--main-text-color);
+  margin: 200px 252px 30px 252px;
+  /* margin-bottom: 30px; */
+  width: 696px;
+  height: 120px;
   font-size: 44px;
   line-height: 1.3;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--main-text-color);
 }
 .claim-button {
+  margin-left: 500px;
+  margin-right: 500px;
+  width: 200px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -95,6 +137,14 @@ footer {
   background: var(--button-active-color);
   color: var(--main-text-color);
   cursor: pointer;
+}
+.features-set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.features > .item:not(:last-child) {
+  margin-right: 30px;
 }
 .features-title {
   color: var(--title-text-color);
@@ -110,13 +160,23 @@ footer {
   letter-spacing: 0.03em;
 }
 .tasks {
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.tasks-set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tasks-set > .item:not(:last-child) {
+  margin-right: 30px;
+}
 .team-title {
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.1;
@@ -124,16 +184,28 @@ footer {
   text-align: center;
 }
 .team-member-name {
+  margin-top: 30px;
   color: var(--title-text-color);
   font-size: 16px;
+  text-align: center;
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
 .team-member-position {
+  margin-top: 10px;
   color: var(--common-text);
   font-size: 16px;
+  text-align: center;
   line-height: 1.1;
   letter-spacing: 0.03em;
+}
+.team-set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.team-set > .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* portfolio page*/
@@ -153,7 +225,32 @@ footer {
   background: var(--button-active-color);
   color: var(--main-text-color);
 }
+.button-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.button-set > .item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -30px -30px 0px;
+}
+.portfolio-set .item{
+  flex-basis: calc((100%-30px)3);
+  margin: 0px 30px 30px 0px;
+}
+.portfolio-set .item:nth-last-child(-n+3){
+  margin-bottom: 0px;
+}
+.frame {
+  border-bottom: 1px solid #EEEEEE;
+}
 .portfolio-title {
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -164,4 +261,7 @@ footer {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+.card-content {
+  margin: 20px 24px;
 }
