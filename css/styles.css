@@ -29,7 +29,7 @@ body {
   padding: 0 15px;
 }
 .section {
-  padding: 94px 0px;
+  padding: 0px 0px 94px 0px;
 }
 
 /*header*/
@@ -115,7 +115,6 @@ footer {
 }
 .claim-section-title-text {
   margin: 200px 252px 30px 252px;
-  /* margin-bottom: 30px; */
   width: 696px;
   height: 120px;
   font-size: 44px;
@@ -127,7 +126,6 @@ footer {
 }
 .claim-button {
   padding: 10px 32px;
-  border: none;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -153,6 +151,7 @@ footer {
 .features-set {
   display: flex;
   align-items: center;
+  padding-bottom: 0px;
 }
 .features-set .item {
   max-width: 270px;
@@ -176,11 +175,15 @@ footer {
 }
 .tasks {
   margin-bottom: 50px;
+  padding: 0px;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.team.section {
+  background-color: var(--button-background);
 }
 .tasks-set {
   display: flex;
@@ -190,8 +193,8 @@ footer {
 .tasks-set > .item:not(:last-child) {
   margin-right: 30px;
 }
-.team {
-  background-color: var(--button-background);
+.team-set img {
+  display: block;
 }
 .team-title {
   margin-bottom: 50px;
@@ -201,8 +204,13 @@ footer {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.team-member-description {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--main-text-color);
+}
 .team-member-name {
-  margin-top: 30px;
+  padding-top: 30px;
   color: var(--title-text-color);
   font-size: 16px;
   text-align: center;
@@ -210,7 +218,8 @@ footer {
   letter-spacing: 0.03em;
 }
 .team-member-position {
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   color: var(--common-text);
   font-size: 16px;
   text-align: center;
@@ -228,6 +237,7 @@ footer {
 
 /* portfolio page*/
 .buttons {
+  padding: 6px 22px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -248,8 +258,6 @@ footer {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 34px;
-  padding: 6px 22px;
-  border: none;
 }
 .button-set > .item:not(:last-child) {
   margin-right: 8px;
