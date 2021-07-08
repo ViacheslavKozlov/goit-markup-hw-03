@@ -125,6 +125,7 @@ footer {
   color: var(--main-text-color);
 }
 .claim-button {
+  border: none;
   padding: 10px 32px;
   font-style: normal;
   font-weight: bold;
@@ -151,6 +152,7 @@ footer {
 .features-set {
   display: flex;
   align-items: center;
+  padding-top: 94px;
   padding-bottom: 0px;
 }
 .features-set .item {
@@ -197,6 +199,7 @@ footer {
   display: block;
 }
 .team-title {
+  padding-top: 94px;
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-size: 36px;
@@ -245,6 +248,7 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  border: none;
   background: var(--button-background);
   color: var(--title-text-color);
   cursor: pointer;
@@ -257,6 +261,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 94px;
   margin-bottom: 34px;
 }
 .button-set > .item:not(:last-child) {
